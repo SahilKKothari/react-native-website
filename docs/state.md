@@ -19,11 +19,11 @@ class Blink extends Component {
     this.state = { isShowingText: true };
 
     // Toggle the state every second
-    setInterval(() => (
+    setInterval(() => {
       this.setState(previousState => (
         { isShowingText: !previousState.isShowingText }
       ))
-    ), 1000);
+    }, 1000);
   }
 
   render() {
